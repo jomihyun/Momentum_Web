@@ -1,12 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="CSS/login.css" />
+  <link rel="stylesheet" href="CSS/style.css" />
+  <title>Momentum Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet" />
 </head>
-<body style="background-color: antiquewhite;">
-    
+
+<body>
+  <div class="wrap">
+    <div class="main_box">
+      <div class="top_box">
+        <div class="title">
+          <div class="title_and_weather">
+            <div id="weather">
+              <span></span>
+              <span></span>
+            </div>
+            <form action="" class="login">
+              <h1 class="name_input"></h1>
+            </form>
+          </div>
+          <!-- Quote -->
+          <div id="quote">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="time_box">
+          <div class="time_line_green"></div>
+          <div class="time_text">
+            <div class="time_is">Time is</div>
+            <h2 id="distal_clock">
+              <span id="clock">00:00</span> <span class="am_pm">PM</span>
+            </h2>
+          </div>
+          <div class="anolog_clock_box">
+            <div class="hour">
+              <div class="hr"></div>
+            </div>
+            <div class="min">
+              <div class="mn"></div>
+            </div>
+            <div class="sec">
+              <div class="sc"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="bottom_box">
+        <div class="galley">
+        </div>
+        <div class="todolist_box">
+          <div class="scroll_box">
+            <div class="todo_title">Things to do.</div>
+            <form id="todo-form">
+              <input type="text" placeholder="Write a To Do" autofocus="true" required />
+            </form>
+            <ul id="items"></ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- login Window -->
+  <div id="login_window">
+    <form id="login_form">
+      <p class="login_title">What is your name?</p>
+      <input type="text" class="login_input" maxlength="15" placeholder="your name" autofocus />
+      <div class="line"></div>
+      <button type="submit" class="login_btn">Login</button>
+    </form>
+  </div>
+
+  <script src="https://kit.fontawesome.com/f8251705b3.js" crossorigin="anonymous"></script>
+  <script src="js/login.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/quotes.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/anologClock.js"></script>
 </body>
+
 </html>
